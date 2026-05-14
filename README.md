@@ -67,7 +67,9 @@ Once you have the hardware completed and built, you can upload the code to it. Y
 ---
 
 ### Source Code: 
+
 <br> 
+
 ### Here are some interesting things about the source code. 
 
 Thermistor Temperature Calculation using the Steinhart-Hart Equation: 
