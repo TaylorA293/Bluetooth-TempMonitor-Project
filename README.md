@@ -6,12 +6,13 @@
 Monitoring the temperature of our surroundings is critical in today's world. Whether that be maintaining the integrity of medical cold supply chains, or making sure that the performance of high density server environments are optimized. Constant temperature monitoring is essential because minor temperature changes can lead to significant degradation of computer system hardware, spoilage of food products and medications, and potentially compromised experimental data. It is these reasons that make temperature monitoring a necessity. This project addresses the need for a quick time temperature tracking solution through the use of `ESP 32 Real Time Bluetooth TempMonitor`. I created this system to use the Bluetooth connectivity of the ESP 32 board along with the thermistor to track and display real time temperature data. It allows the user to remotely monitor the temperature conditions of the environment without physical interaction, making sure the data is always within reach. This webpage teaches you how to build the `ESP 32 Real Time Bluetooth TempMonitor` from scratch.
 
 ---
-<br><br>
 
 ### System Overview:
 
+<br></br>
+
 ---
-<br><br>
+
 
 ### Materials Needed:
 
@@ -41,9 +42,10 @@ Monitoring the temperature of our surroundings is critical in today's world. Whe
 **Bluetooth Terminal App**
 - Android: "Serial Bluetooth Terminal" by Kai Morich (free)
 - IOS: "LightBlue" by Punch Through (free)
+  
+<br><br>
 
 ---
-<br><br>
 
 ### Key Features:
 
@@ -55,7 +57,9 @@ Monitoring the temperature of our surroundings is critical in today's world. Whe
 - ✓ Data logging with timestamps for potential analysis.
 - ✓ Power management with low-power sleep modes.
 
----
 <br><br>
 
-### COnclusion 
+---
+
+
+### Conclusion 
