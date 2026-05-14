@@ -138,11 +138,11 @@ else if (command == "SET_THRESHOLD:25") {
 
 ---
 
-### Demonstration 
-
-Once the code is uploaded, open the serial monitor, and you should see something that looks like the picture below. This will run on a constant loop, displaying the current temperature of the environment. You can test it by placing your fingers on the thermistor and watching the temperature rise. You can also try commands such as START, STOP, HISTORY, RESET, and SET_THRESHOLD, and view what happens. 
+### Demonstration:
 
 
+
+Once the code is uploaded, open the serial monitor, and you should see something that looks like the picture above. This will run on a constant loop, displaying the current temperature of the environment. You can test it by placing your fingers on the thermistor and watching the temperature rise. You can also try commands such as START, STOP, HISTORY, RESET, and SET_THRESHOLD, and view what happens. 
 
 <br>
 
