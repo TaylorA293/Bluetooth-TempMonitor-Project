@@ -70,7 +70,7 @@ Once you have the hardware completed and built, you can upload the code to it. Y
 
 
 
-### Here are some interesting parts of the source code. 
+### Here are some interesting parts of the source code: 
 
 ### Real Time Temperature Calculation
 
