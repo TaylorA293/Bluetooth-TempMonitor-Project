@@ -11,7 +11,7 @@ Monitoring the temperature of our surroundings is critical in today's world. Whe
 
 ### System Overview:
 
-<img src="CS 210 Project Diagram.jpg" width="100%" alt="System Overview Diagram" style="max-width: 900px; display: block; margin: 0 auto;">
+<img src="CS 210 Project Diagram.jpg" width="100%" alt="System Overview Diagram" style="max-width: 1000px; display: block; margin: 0 auto;">
 <br>
 
 ---
