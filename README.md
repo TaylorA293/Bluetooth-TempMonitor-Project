@@ -68,7 +68,11 @@ Once you have the hardware completed and built, you can upload the code to it. Y
 
 ### Source Code: 
 
+
+
 ### Here are some interesting parts of the source code. 
+
+### Real Time Temperature Calculation
 
 Thermistor Temperature Calculation using the Steinhart-Hart Equation: 
 
@@ -84,11 +88,11 @@ double readTemperature() {
   return tempC;
 }
 ```
-**Interesting Concept:** The `log()` function and Steinhart-Hart equation convert the values from the thermistor to linear temperature readings. This gives us the temperature readings that we see in the Serial Monitor. 
+**Interesting Concept:** The `log()` function and Steinhart-Hart equation converts the values from the thermistor to linear temperature readings. This gives us the temperature readings that we see in the Serial Monitor. 
 
 <br>
 
-### Threshold-Based Alerting
+### Threshold Alerting
 
 The System Continuously Monitors The Temperature and Sends Alerts:
 
@@ -102,11 +106,11 @@ void checkTemperatureAlert(double temp) {
 }
 ```
 
-**Interesting Concept:** Conditional monitoring is a core IoT pattern. Devices autonomously check conditions and alert users without being polled.
+**Interesting Concept:** This is a continuous loop that will constantly check the temperature reading and will display a warning message if the temperature crosses this threshold. Conditional monitoring is essential for device and server management. Devices auto check conditions and alert users without manual intervention.
 
 <br> 
 
-### Command Processing & State Management
+### User Command Input 
 
 Users Can Control The System with Bluetooth:
 
@@ -128,7 +132,7 @@ else if (command == "SET_THRESHOLD:25") {
 }
 ```
 
-**Key Concept:** State machines (tracking if logging is ON/OFF) are essential for embedded systems.
+**Interesting Concept:** Allows for the user to input commands to the board to have the desired outcome. This allows for easy control of the system with little manual labor. 
 
 <br>
 
@@ -158,14 +162,14 @@ else if (command == "SET_THRESHOLD:25") {
 
 - [Espressif BLE API Reference](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/bluetooth/ble.html) — Bluetooth Low Energy API
 
-- [Arduino Language Reference](https://www.arduino.cc/reference/) — Built in functions and libraries
+- [Arduino Language Reference](https://www.arduino.cc/reference/) — Built in functions and libraries which help in the coding process.
 
-- [Random Nerd Tutorials - ESP32 Bluetooth](https://randomnerdtutorials.com/esp32-bluetooth-classic-arduino-ide/) — Best practices and tutorials
+- [Random Nerd Tutorials - ESP32 Bluetooth](https://randomnerdtutorials.com/esp32-bluetooth-classic-arduino-ide/) — Best practices and tutorials on how to use the ESP32 Bluetooth.
   
-- [Stack Overflow - C Programming Reference](https://stackoverflow.com/questions) - Good for assistance in coding
+- [Stack Overflow - C Programming Reference](https://stackoverflow.com/questions) - Good for assistance in coding and help when stuck.
 
-- [Claude](https://claude.ai/new)
+- [Claude - Artificial Intelligence Assistant](https://claude.ai/new) - Good for proofreading and explaining how certain aspects of the board work.
 
-- [Github](https://github.com/)
+- [Github - Project Repository and Ideas](https://github.com/) - Good to look for inspiration, as well as material to work with.
 
 <br>
