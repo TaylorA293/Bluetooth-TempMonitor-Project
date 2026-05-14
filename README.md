@@ -54,11 +54,15 @@ The diagram above shows the three main components (excluding stuff like wires an
 ---
 
 ### How to Build: 
-In order to build the `ESP 32 Real Time Bluetooth TempMonitor`, you start by finding the 3.3V and GRND pins on the board, which will be labeled to the right of the board. Using one of the jumper wires, connect it in the middle row of the pin marked 1 on the board. In the same row, connect that same wire into the board. Above the port where you placed the wire, place one end of the resistor; place the other end of the resistor in the GRND row in the same column. Then place the thermistor one away from the first wire you place, but in the same row. Connect that first wire with one leg of the thermistor with another wire. Connect the other leg of the thermistor with a wire and link it to GRND. The final result should look like this:
+In order to build the `ESP 32 Real Time Bluetooth TempMonitor`, you start by finding the 3.3V and GRND pins on the board, which will be labeled to the right of the board. Using one of the jumper wires, connect it in the middle row of the pin marked 1 on the board. In the same row, connect that same wire into a port further down the board. Above the port where you placed the wire, place one end of the resistor; place the other end of the resistor in the GRND row in the same column. Then place the thermistor one away from the first wire you placed, but in the same row. Connect that first wire with one leg of the thermistor with another wire. Connect the other leg of the thermistor with a wire and link it to GRND. The final result should look like this:
 
 <img src="CS Project Build IRL.PNG" width="100%" alt="System Overview Diagram" style="max-width: 1000px; display: block; margin: 0 auto;">
 
 <img src="CS Project Build Diagram.png" width="100%" alt="System Overview Diagram" style="max-width: 1000px; display: block; margin: 0 auto;">
+
+<br>
+
+---
 
 ### Key Features:
 
