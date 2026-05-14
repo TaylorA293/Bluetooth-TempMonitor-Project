@@ -138,11 +138,21 @@ else if (command == "SET_THRESHOLD:25") {
 
 ---
 
+### Demonstration 
+
+Once the code is uploaded, open the serial monitor, and you should see something that looks like the picture below. This will run on a constant loop, displaying the current temperature of the environment. You can test it by placing your fingers on the thermistor and watching the temperature rise. You can also try commands such as START, STOP, HISTORY, RESET, and SET_THRESHOLD, and view what happens. 
+
+
+
+<br>
+
+--- 
+
 ### Key Features of The TempMonitor:
 
 - ✓ Real-time temperature reading every second.
 - ✓ Wireless Bluetooth communication with any device.
-- ✓ Interactive command system (START, STOP, HISTORY, RESET) from master device.
+- ✓ Interactive command system (START, STOP, HISTORY, RESET, and SET_THRESHOLD) from the master device.
 - ✓ Automatic temperature alerts when the temperature threshold is exceeded.
 - ✓ Configurable alert thresholds via Bluetooth.
 - ✓ Data logging with timestamps for potential analysis.
