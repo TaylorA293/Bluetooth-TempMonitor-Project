@@ -164,15 +164,13 @@ Once the code is uploaded, open the serial monitor, and you should see something
 
 
 ### References: 
-- [Freenove Thermistor Tutorial](https://docs.freenove.com/projects/fnk0083/en/latest/fnk0083/codes/C/13_Thermistor.html) — Guide for reading NTC thermistors with ESP32
+- [Freenove Thermistor Tutorial](https://docs.freenove.com/projects/fnk0083/en/latest/fnk0083/codes/C/13_Thermistor.html) — Guide for reading and building the thermistors with ESP32.
 
-- [Freenove BLE Data Passthrough](https://docs.freenove.com/projects/fnk0083/en/latest/fnk0083/codes/C/27_Bluetooth.html#project-bluetooth-low-energy-data-passthrough) — BLE communication setup
+- [Freenove BLE Data Passthrough](https://docs.freenove.com/projects/fnk0083/en/latest/fnk0083/codes/C/27_Bluetooth.html#project-bluetooth-low-energy-data-passthrough) — BLE communication and setup.
 
-- [Espressif ESP32 ADC Documentation](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/peripherals/adc.html) — Analog to digital conversion
+- [Espressif ESP32 ADC Documentation](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/peripherals/adc.html) — Analog to digital conversion.
 
-- [Espressif BLE API Reference](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/bluetooth/ble.html) — Bluetooth Low Energy API
-
-- [Arduino Language Reference](https://www.arduino.cc/reference/) — Built in functions and libraries which help in the coding process.
+- [Arduino Language Reference](https://www.arduino.cc/reference/) — Built in functions and libraries which helped in the coding process.
 
 - [Random Nerd Tutorials - ESP32 Bluetooth](https://randomnerdtutorials.com/esp32-bluetooth-classic-arduino-ide/) — Best practices and tutorials on how to use the ESP32 Bluetooth.
   
