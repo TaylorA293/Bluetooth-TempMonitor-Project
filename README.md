@@ -5,18 +5,20 @@
 ### Introduction:
 Monitoring the temperature of our surroundings is critical in today's world. Whether that be maintaining the integrity of medical cold supply chains, or making sure that the performance of high density server environments are optimized. Constant temperature monitoring is essential because minor temperature changes can lead to significant degradation of computer system hardware, spoilage of food products and medications, and potentially compromised experimental data. It is these reasons that make temperature monitoring a necessity. This project addresses the need for a quick time temperature tracking solution through the use of `ESP 32 Real Time Bluetooth TempMonitor`. I created this system to use the Bluetooth connectivity of the ESP 32 board along with the thermistor to track and display real time temperature data. It allows the user to remotely monitor the temperature conditions of the environment without physical interaction, making sure the data is always within reach. This webpage teaches you how to build the `ESP 32 Real Time Bluetooth TempMonitor` from scratch.
 
+<br>
+
 ---
 
 ### System Overview:
 
-<br></br>
+<br>
 
 ---
 
 
 ### Materials Needed:
 
-#### Hardware: 
+### Hardware: 
 **1 × ESP32 Development Board with Breadboard Attached**
 - (ESP32-S3, ESP32-WROOM) Must have WiFi and Bluetooth capabilities.
 
@@ -29,10 +31,10 @@ Monitoring the temperature of our surroundings is critical in today's world. Whe
 **1 × USB Cable**
 - To upload the code and supply the board with power.
 
-**3 M/M Jumper Wires**
+**3 × M/M Jumper Wires**
 - For making connections between the board and external hardware.
 
-#### Software:
+### Software:
 **Arduino IDE (v1.8.19+)**
 - Download from [arduino.cc](https://www.arduino.cc/en/software)
 
@@ -43,7 +45,7 @@ Monitoring the temperature of our surroundings is critical in today's world. Whe
 - Android: "Serial Bluetooth Terminal" by Kai Morich (free)
 - IOS: "LightBlue" by Punch Through (free)
   
-<br><br>
+<br>
 
 ---
 
@@ -57,9 +59,9 @@ Monitoring the temperature of our surroundings is critical in today's world. Whe
 - ✓ Data logging with timestamps for potential analysis.
 - ✓ Power management with low-power sleep modes.
 
-<br><br>
+<br>
 
 ---
 
 
-### Conclusion 
+### Conclusion:
