@@ -140,7 +140,7 @@ else if (command == "SET_THRESHOLD:25") {
 
 ### Demonstration:
 
-
+<img src="Demonstration Screenshot.png" width="100%" alt="System Overview Diagram" style="max-width: 1000px; display: block; margin: 0 auto;">
 
 Once the code is uploaded, open the serial monitor, and you should see something that looks like the picture above. This will run on a constant loop, displaying the current temperature of the environment. You can test it by placing your fingers on the thermistor and watching the temperature rise. Once you confirm that it is working, you can connect your device to it using the Bluetooth app of your choice. Look for "ESP32 Tempmonitor" and press connect. You should see "Phone Connected!" display in the Serial Monitor. From here, you can input commands such as START, STOP, HISTORY, and SET_THRESHOLD, and view what happens. 
 
