@@ -172,4 +172,6 @@ else if (command == "SET_THRESHOLD:25") {
 
 - [Github - Project Repository and Ideas](https://github.com/) - Good to look for inspiration, as well as material to work with.
 
+- [Visual Studio Code IDE and AI Copilot](https://code.visualstudio.com/) - Good code compiler along with AI assistive code generation. Also reviews code and suggests edits. 
+
 <br>
