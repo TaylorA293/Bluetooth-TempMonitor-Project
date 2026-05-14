@@ -13,7 +13,7 @@ Monitoring the temperature of our surroundings is critical in today's world. Whe
 
 <img src="CS 210 Project Diagram.jpg" width="100%" alt="System Overview Diagram" style="max-width: 1000px; display: block; margin: 0 auto;">
 
-The diagram above shows the three main components (excluding stuff like wires and resistors) working together. On the left is the thermistor, which is a temperature sensor that is able to detect heat in the environment and turn it into an electrical signal that the ESP32 can use. The ESP32, which is in the center of the diagram, is the microcontroller that receives the signal from the thermistor and converts it to a readable temperature value. It also stores the values with timestamps and checks if it's above a set threshold, and processes the commands from the master device (your phone, laptop, tablet, etc), which is on the right of the diagram. This user interface is where you can input your commands (START, STOP, HISTORY, RESET, SHUTDOWN, and SET_THRESHOLD). The thermistor connects directly to the ESP32, the ESP32 communicates wirelessly to your device, and displays the output depending on the command from the master device. 
+The diagram above shows the three main components (excluding stuff like wires and resistors) working together. On the left is the thermistor, which is a temperature sensor that is able to detect heat in the environment and turn it into an electrical signal that the ESP32 can use. The ESP32, which is in the center of the diagram, is the microcontroller that receives the signal from the thermistor and converts it to a readable temperature value. It also stores the values with timestamps and checks if it's above a set threshold, and processes the commands from the master device (your phone, laptop, tablet, etc), which is on the right of the diagram. This user interface is where you can input your commands (START, STOP, HISTORY, SHUTDOWN, and SET_THRESHOLD). The thermistor connects directly to the ESP32, the ESP32 communicates wirelessly to your device, and displays the output depending on the command from the master device. 
 
 <br>
 
@@ -142,7 +142,7 @@ else if (command == "SET_THRESHOLD:25") {
 
 
 
-Once the code is uploaded, open the serial monitor, and you should see something that looks like the picture above. This will run on a constant loop, displaying the current temperature of the environment. You can test it by placing your fingers on the thermistor and watching the temperature rise. Once you confirm that it is working, you can connect your device to it using the Bluetooth app of your choice. Look for "ESP32 Tempmonitor" and press connect. You should see "Phone Connected!" display in the Serial Monitor. From here, you can input commands such as START, STOP, HISTORY, RESET, and SET_THRESHOLD, and view what happens. 
+Once the code is uploaded, open the serial monitor, and you should see something that looks like the picture above. This will run on a constant loop, displaying the current temperature of the environment. You can test it by placing your fingers on the thermistor and watching the temperature rise. Once you confirm that it is working, you can connect your device to it using the Bluetooth app of your choice. Look for "ESP32 Tempmonitor" and press connect. You should see "Phone Connected!" display in the Serial Monitor. From here, you can input commands such as START, STOP, HISTORY, and SET_THRESHOLD, and view what happens. 
 
 <br>
 
@@ -152,7 +152,7 @@ Once the code is uploaded, open the serial monitor, and you should see something
 
 - ✓ Real-time temperature reading every second.
 - ✓ Wireless Bluetooth communication with any device.
-- ✓ Interactive command system (START, STOP, HISTORY, RESET, and SET_THRESHOLD) from the master device.
+- ✓ Interactive commands (START, STOP, HISTORY, and SET_THRESHOLD) from the master device.
 - ✓ Automatic temperature alerts when the temperature threshold is exceeded.
 - ✓ Configurable alert thresholds via Bluetooth.
 - ✓ Data logging with timestamps for potential analysis.
