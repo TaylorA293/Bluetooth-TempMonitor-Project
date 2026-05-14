@@ -12,6 +12,9 @@ Monitoring the temperature of our surroundings is critical in today's world. Whe
 ### System Overview:
 
 <img src="CS 210 Project Diagram.jpg" width="100%" alt="System Overview Diagram" style="max-width: 1000px; display: block; margin: 0 auto;">
+
+The diagram above shows the three main components (excluding stuff like wires and resistors) working together. On the left is the thermistor, which is a temperature sensor that is able to detect heat in the environment and turn it into an electrical signal that the ESP32 can use. The ESP32, which is in the center of the diagram, is the microcontroller that receives the signal from the thermistor and converts it to a readable temperature value. It also stores the values with timestamps and checks if it's above a set threshold, and processes the commands from the master device (your phone, laptop, tablet, etc), which is on the right of the diagram. This user interface is where you can input your commands (START, STOP, HISTORY, RESET, SHUTDOWN, and SET_THRESHOLD). The thermistor connects directly to the ESP32, the ESP32 communicates wirelessly to your device, and displays the output depending on the command from the master device. 
+
 <br>
 
 ---
