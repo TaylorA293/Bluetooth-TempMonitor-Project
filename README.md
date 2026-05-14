@@ -150,3 +150,22 @@ else if (command == "SET_THRESHOLD:25") {
 
 
 ### References: 
+- [Freenove Thermistor Tutorial](https://docs.freenove.com/projects/fnk0083/en/latest/fnk0083/codes/C/13_Thermistor.html) — Guide for reading NTC thermistors with ESP32
+
+- [Freenove BLE Data Passthrough](https://docs.freenove.com/projects/fnk0083/en/latest/fnk0083/codes/C/27_Bluetooth.html#project-bluetooth-low-energy-data-passthrough) — BLE communication setup
+
+- [Espressif ESP32 ADC Documentation](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/peripherals/adc.html) — Analog to digital conversion
+
+- [Espressif BLE API Reference](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/bluetooth/ble.html) — Bluetooth Low Energy API
+
+- [Arduino Language Reference](https://www.arduino.cc/reference/) — Built in functions and libraries
+
+- [Random Nerd Tutorials - ESP32 Bluetooth](https://randomnerdtutorials.com/esp32-bluetooth-classic-arduino-ide/) — Best practices and tutorials
+  
+- [Stack Overflow - C Programming Reference](https://stackoverflow.com/questions) - Good for assistance in coding
+
+- [Claude](https://claude.ai/new)
+
+- [Github](https://github.com/)
+
+<br>
