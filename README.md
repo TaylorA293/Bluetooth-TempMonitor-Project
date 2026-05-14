@@ -14,8 +14,8 @@ Monitoring the temperature of our surroundings is critical in today's world. Whe
 ### Materials Needed:
 
 #### Hardware: 
-**1 × ESP32 Development Board with Breadboard Attached**
-- (ESP32-S3, ESP32-WROOM) Must have WiFi and Bluetooth capabilities.
+-**1 × ESP32 Development Board with Breadboard Attached**
+-- (ESP32-S3, ESP32-WROOM) Must have WiFi and Bluetooth capabilities.
 
 **1 × Thermistor (10kΩ)**
 - Temperature sensor for temperature monitoring and input.
