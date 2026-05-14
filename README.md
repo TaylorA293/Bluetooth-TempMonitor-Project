@@ -68,9 +68,7 @@ Once you have the hardware completed and built, you can upload the code to it. Y
 
 ### Source Code: 
 
-<br> 
-
-### Here are some interesting things about the source code. 
+### Here are some interesting parts of the source code. 
 
 Thermistor Temperature Calculation using the Steinhart-Hart Equation: 
 
@@ -86,12 +84,12 @@ double readTemperature() {
   return tempC;
 }
 ```
-**Interesting Concept:** The `log()` function and Steinhart-Hart equation convert non-linear resistance values to linear temperature readings. This is common in real-world sensor applications.
+**Interesting Concept:** The `log()` function and Steinhart-Hart equation convert the values from the thermistor to linear temperature readings. This gives us the temperature readings that we see in the Serial Monitor. 
 <br>
 
 ---
 
-### Key Features:
+### Key Features of The TempMonitor:
 
 - ✓ Real-time temperature reading every second.
 - ✓ Wireless Bluetooth communication with any device.
@@ -106,4 +104,12 @@ double readTemperature() {
 ---
 
 
-### Conclusion:
+### Source Code:
+
+
+
+<br>
+
+---
+
+### References: 
