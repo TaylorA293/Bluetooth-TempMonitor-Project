@@ -60,6 +60,31 @@ In order to build the `ESP 32 Real Time Bluetooth TempMonitor`, you start by fin
 
 <img src="CS Project Build Diagram.png" width="100%" alt="System Overview Diagram" style="max-width: 1000px; display: block; margin: 0 auto;">
 
+Once you have the hardware completed and built, you can upload the code to it. You can find the source code for the TempMonitor at the beginning and end of this webpage. 
+
+<br>
+
+---
+
+### Source Code: 
+<br> 
+### Here are some interesting things about the source code. 
+
+Thermistor Temperature Calculation using the Steinhart-Hart Equation: 
+
+```cpp
+double readTemperature() {
+  int adcValue = analogRead(PIN_ANALOG_IN);
+  double voltage = (float)adcValue / 4095.0 * 3.3;
+  double Rt = 10 * voltage / (3.3 - voltage);
+  
+  // Steinhart-Hart: converts resistance to absolute temperature
+  double tempK = 1 / (1 / (273.15 + 25) + log(Rt / 10) / 3950.0);
+  double tempC = tempK - 273.15;  // Kelvin to Celsius
+  return tempC;
+}
+```
+**Interesting Concept:** The `log()` function and Steinhart-Hart equation convert non-linear resistance values to linear temperature readings. This is common in real-world sensor applications.
 <br>
 
 ---
@@ -68,7 +93,7 @@ In order to build the `ESP 32 Real Time Bluetooth TempMonitor`, you start by fin
 
 - ✓ Real-time temperature reading every second.
 - ✓ Wireless Bluetooth communication with any device.
-- ✓ Interactive command system (START, STOP, HISTORY, RESET).
+- ✓ Interactive command system (START, STOP, HISTORY, RESET) from master device.
 - ✓ Automatic temperature alerts when the temperature threshold is exceeded.
 - ✓ Configurable alert thresholds via Bluetooth.
 - ✓ Data logging with timestamps for potential analysis.
