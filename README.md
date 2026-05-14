@@ -149,12 +149,4 @@ else if (command == "SET_THRESHOLD:25") {
 ---
 
 
-### Source Code:
-
-
-
-<br>
-
----
-
 ### References: 
