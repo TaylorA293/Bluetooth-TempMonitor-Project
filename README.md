@@ -60,7 +60,7 @@ In order to build the `ESP 32 Real Time Bluetooth TempMonitor`, you start by fin
 
 <img src="CS Project Build Diagram.png" width="100%" alt="System Overview Diagram" style="max-width: 1000px; display: block; margin: 0 auto;">
 
-Once you have the hardware completed and built, you can upload the code to it. You can find the source code for the TempMonitor at the beginning and end of this webpage. 
+Once you have the hardware completed and built, you can upload the code to it. You can find the source code for the TempMonitor at the beginning and in the "Source Code" portion of this webpage. 
 
 <br>
 
@@ -85,6 +85,51 @@ double readTemperature() {
 }
 ```
 **Interesting Concept:** The `log()` function and Steinhart-Hart equation convert the values from the thermistor to linear temperature readings. This gives us the temperature readings that we see in the Serial Monitor. 
+
+<br>
+
+### Threshold-Based Alerting
+
+The System Continuously Monitors The Temperature and Sends Alerts:
+
+```cpp
+void checkTemperatureAlert(double temp) {
+  if (temp > tempThreshold) {
+    String alert = "🔥 ALERT! Temp: " + String(temp, 1) + 
+                   "°C (Threshold: " + String(tempThreshold, 1) + "°C)";
+    sendBLE(alert);
+  }
+}
+```
+
+**Interesting Concept:** Conditional monitoring is a core IoT pattern. Devices autonomously check conditions and alert users without being polled.
+
+<br> 
+
+### Command Processing & State Management
+
+Users Can Control The System with Bluetooth:
+
+```cpp
+if (command == "START") {
+  isLogging = true;
+  readingCount = 0;
+  sendBLE("✓ Logging started!");
+}
+else if (command == "STOP") {
+  isLogging = false;
+  sendBLE("✓ Logging stopped!");
+}
+else if (command == "HISTORY") {
+  // Send all logged readings with statistics
+}
+else if (command == "SET_THRESHOLD:25") {
+  tempThreshold = 25.0;
+}
+```
+
+**Key Concept:** State machines (tracking if logging is ON/OFF) are essential for embedded systems.
+
 <br>
 
 ---
